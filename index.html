@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking Website</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar with reference to respective sections of the page using id's -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section for introduction with title and elements to bold the text -->
+      <section id="about">
+        <h1>Welcome to Talagar Travels</h1>
+        <p>
+          We aim to provide for you,
+          <strong>the best of the best</strong> experieces for your travel
+          bookings!
+        </p>
+      </section>
+
+      <!-- Section for top 3 travel destinations, with image embed, and brief description -->
+      <section id="destinations">
+        <h3>Popular Travel Destinations Now!</h3>
+        <ul>
+          <li>
+            <h2>Northern Lights</h2>
+            <img src="Images/img1.png" alt="Destination1" />
+            <p>
+              “Witnessing the ethereal Northern Lights dance across the
+              <em>Arctic skies</em> is a natural spectacle that ranks high on
+              the bucket list for many adventure seekers,” Paton shares. Some of
+              the best locations to see them include Iceland, Norway, Sweden,
+              Greenland and Finland.
+            </p>
+          </li>
+          <li>
+            <h2>Taj Mahal</h2>
+            <img src="Images/img2.png" alt="Destination2" />
+            <p>
+              Built by Emperor <em>Shah Jahan</em> in memory of his beloved
+              wife, this UNESCO World Heritage site is one of the world's most
+              iconic architectural marvels and has been drawing visitors to
+              Agra, India for hundreds of years. “It’s a testament to eternal
+              love and architectural brilliance,” Paton explains.
+            </p>
+          </li>
+          <li>
+            <h2>Pompeii</h2>
+            <img src="Images/img3.png" alt="Destination3" />
+            <p>
+              This ancient Roman city in southern Italy was famously buried by
+              the eruption of <em>Mount Vesuvius</em> in AD 79. Today, the
+              remarkably preserved archaeological site offers a glimpse into
+              daily life in the Roman Empire. “Exploring Pompeii's streets,
+              villas, and amphitheater is like stepping back in time,” says
+              Paton.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section for table showcasing travel packages -->
+      <section>
+        <h2>Travel Packages</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Package Name</th>
+              <th>Destination</th>
+              <th>Price</th>
+              <th>Duration</th>
+            </tr>
+            <tr>
+              <td>Northern Lights</td>
+              <td>Norway</td>
+              <td>Rs.1,50,000</td>
+              <td>7 days</td>
+            </tr>
+            <tr>
+              <td>Taj Mahal</td>
+              <td>India</td>
+              <td>Rs.1,20,000</td>
+              <td>2 days</td>
+            </tr>
+            <tr>
+              <td>Pompeii</td>
+              <td>Italy</td>
+              <td>Rs2,20,000</td>
+              <td>5 days</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+
+      <!-- Section for form that facilitates boooking -->
+      <section>
+        <h3>Book your travel!</h3>
+        <form>
+          <!-- Text input -->
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required /><br />
+          <!-- Email input -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+          <!-- Radio Buttons -->
+          <p>Choose Your Travel Class</p>
+          <input type="radio" id="economy" name="class" value="economy" />
+          <label for="economy">Economy</label><br />
+          <input type="radio" id="buisness" name="class" value="buisness" />
+          <label for="buisness">Buisness</label><br />
+          <input
+            type="radio"
+            id="first_class"
+            name="class"
+            value="first_class"
+          />
+          <label for="first_class">First Class</label><br /><br />
+          <!-- Checkboxes -->
+          <p>Add-ons:</p>
+          <input
+            type="checkbox"
+            id="insurance"
+            name="addons"
+            value="insurance"
+          />
+          <label for="insurance">Insurance</label><br />
+          <input
+            type="checkbox"
+            id="meal-plan"
+            name="addons"
+            value="meal-plan"
+          />
+          <label for="meal-plan">Meal Plan</label><br /><br />
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer containing contach information and links to social media -->
+    <footer id="contact">
+      <p>Contact us: contactInfo@talagarTravels.com | +123 456 7890</p>
+      <p>
+        Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and
+        <a href="#">Instagram</a>.
+      </p>
+    </footer>
+  </body>
+</html>
